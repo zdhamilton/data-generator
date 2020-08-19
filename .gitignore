@@ -1,0 +1,11 @@
+# Ignore these files: 
+
+# Local ENV Variables
+.env 
+
+# Personal notes
+log-type-notes
+run-command
+
+# Testing
+testing.js

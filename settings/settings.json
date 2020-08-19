@@ -1,0 +1,49 @@
+{
+    "generators": [
+        {
+            "component": "webserver",
+            "settings": { "type": "iis", "rate": 1 }
+        },
+        {
+            "component": "webserver",
+            "settings": { "type": "apache", "rate": 1 }
+        },
+        {
+            "component": "webserver",
+            "settings": { "type": "nginx", "rate": 1 }
+        },
+        {
+            "component": "webserver",
+            "settings": { "type": "express", "rate": 1 }
+        },
+        {
+            "component": "kubernetes",
+            "settings": {
+                "namespaces": [
+                    {
+                        "name": "hrds-prod",
+                        "pods": [
+                            { "container": "dispatcher", "replicas": 3 },
+                            { "container": "mongo", "replicas": 2 },
+                            { "container": "nodejs", "replicas": 5 }
+                        ]
+                    },
+                    {
+                        "name": "hrds-dev",
+                        "pods": [
+                            { "container": "dispatcher", "replicas": 3 },
+                            { "container": "mongo", "replicas": 2 },
+                            { "container": "nodejs", "replicas": 5 }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "component": "network",
+            "settings": {
+                "type": "vpcflow"
+            }
+        }
+    ]
+}
