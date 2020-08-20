@@ -28,30 +28,3 @@ fs.readFile('./settings/settings.json', 'utf8', (error, data) => {
         }
     })
 })
-
-// const settings = {
-//     generators: [
-//         { 
-//             component: 'webserver',
-//             settings: { type: 'apache', rate: 1 },
-//         },
-//         { 
-//             component: 'webserver', 
-//             settings: { type: 'iis', rate: 1 },
-//         },
-//         {
-//             component: 'webserver',
-//             settings: { type: 'nginx', rate: 0.5 }
-//         },
-//     ]
-// }
-// settings.generators.forEach(generator => {
-//     switch (generator.component) {
-//         case 'webserver':
-//             Webserver.generator(generator.settings);
-//             console.log(`[Builder].build() INFO 'Built '${generator.component}' generator with settings: '`+JSON.stringify(generator.settings)+"'");
-//             break;
-//         default:
-//             throw Error("[Builder].build() ERROR 'No valid generator component provided.'");
-//     }
-// })
