@@ -1,6 +1,5 @@
 const Generator = require('./utilities/generator');
 const Shipper = require('./utilities/shipper');
-const { setDefaultFormat } = require('node-datetime');
 
 class Kubernetes {
     constructor(settings) {

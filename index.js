@@ -1,8 +1,8 @@
 require('dotenv').config();
-const fs = require('fs') //.promises;
-const Webserver = require('./content/webserver');
-const Kubernetes = require('./content/kubernetes');
-const Network = require('./content/network');
+const fs = require('fs');
+const Webserver = require('./components/webserver');
+const Kubernetes = require('./components/kubernetes');
+const Network = require('./components/network');
 
 fs.readFile('./settings/settings.json', 'utf8', (error, data) => {
     if (error) {
