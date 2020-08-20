@@ -16,7 +16,6 @@ Clone this repo.
 
 ```
 $ git clone https://github.com/zdhamilton/data-generator.git
-
 ```
 Enter the cloned repo and build the image from the `Dockerfile`. 
 
