@@ -6,7 +6,7 @@ RUN mkdir ./settings
 
 COPY ./package*.json ./
 COPY ./index.js ./
-COPY ./content ./content
+COPY ./components ./components
 
 RUN npm install .
 
