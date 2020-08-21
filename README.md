@@ -31,3 +31,4 @@ docker run --rm --name data-generator \
     -e DATA_URL="<<listener host>>:8071" \
     data-generator 
 ```
+The previously built image will run with the default generators (essentially all of them). This can be customized by modifying the `settings.json` file found in `./settings`. A brief instructional Wiki can be found [here](https://github.com/zdhamilton/data-generator/wiki) to help you make your own `settings.json` files, and thus your own generators. 
