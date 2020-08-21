@@ -44,6 +44,18 @@
             "settings": {
                 "type": "vpcflow"
             }
+        },
+        {
+            "component": "loadbalancer",
+            "settings": {
+                "type": "elb"
+            }
+        },
+        {
+            "component": "loadbalancer",
+            "settings": {
+                "type": "haproxy"
+            }
         }
     ]
 }
