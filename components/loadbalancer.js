@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const Generator = require('./utilities/generator');
 const Shipper = require('./utilities/shipper');
 
