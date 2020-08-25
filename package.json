@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "faker": "^4.1.0",
     "logzio-nodejs": "^2.0.1",
     "node-datetime": "^2.1.2",

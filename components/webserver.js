@@ -4,8 +4,8 @@ const Shipper = require('./utilities/shipper');
 const verbs = ['GET','POST','PUT','DELETE'];
 const paths = ['/home','/dispatch','/items','/categories','/checkout'];
 const responses = ['200','300','400','404','500','503'];
-
  
+
 class Webserver {
     constructor(settings) {
         this.type = settings.type;
